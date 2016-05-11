@@ -34,6 +34,7 @@ h1 {
 
 .subtitulo-texto {
     font-size: 30px;
+    clear: both;
 }
 
 main a {
@@ -67,6 +68,7 @@ p {
     background-color: #000;
     color: #F2FFFC;
     padding: 20px;
+    clear: both;
 }
 
 .container {
@@ -101,7 +103,7 @@ em {
     width: 40px;
     height: 40px;
     display: block;
-    text-indent: -99999px;  /* Image Replacement - Joga a palavra para fora da tela e mostra apenas a imagem */
+    text-indent: -99999px;
 }
 
 .github {
@@ -114,4 +116,32 @@ em {
 
 .linkedin {
     background-image: url(linkedin.png);
+}
+
+.petrobras {
+    float: left;
+    margin-left: 0;
+}
+
+.fiat {
+    float: right;
+    margin-right: 0;
+}
+
+main {
+    width: 80%;
+    float: left;
+}
+
+.minha-foto,
+.navegacao-site {
+    width: 20%;
+    float: right;   /* faz o objeto flutuar a esquerda */
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+    box-sizing: border-box;   /*redimensiona o tamanho somando a borda*/
+}
+
+.navegacao-site {
+    clear: right;   /* remove float com relação ao objeto */
 }
